@@ -1,0 +1,28 @@
+extern const GeoLayout tower_1_area_1_geo[];
+extern const GeoLayout tower_1_area_1[];
+extern const Collision tower_1_area_1_collision[];
+extern const MacroObject tower_1_area_1_macro_objs[];
+
+extern u8 tower_1_dl_brick_large_texture_rgba16[];
+extern u8 tower_1_dl_SUPER_MARIO_64_6AA1BE26_0_2_all_rgba16[];
+extern u8 tower_1_dl_brick_repeat_ci8[];
+extern u8 tower_1_dl_brick_repeat_pal_rgba16[];
+extern u8 tower_1_dl_SUPER_MARIO_64_D872790D_0_2_all_ci8[];
+extern u8 tower_1_dl_SUPER_MARIO_64_D872790D_0_2_all_pal_rgba16[];
+extern Vtx tower_1_dl_Cylinder_mesh_layer_1_vtx_cull[8];
+extern Vtx tower_1_dl_Cylinder_mesh_layer_1_vtx_0[186];
+extern Gfx tower_1_dl_Cylinder_mesh_layer_1_tri_0[];
+extern Vtx tower_1_dl_Cylinder_mesh_layer_1_vtx_1[22];
+extern Gfx tower_1_dl_Cylinder_mesh_layer_1_tri_1[];
+extern Vtx tower_1_dl_Cylinder_mesh_layer_1_vtx_2[54];
+extern Gfx tower_1_dl_Cylinder_mesh_layer_1_tri_2[];
+extern Vtx tower_1_dl_Cylinder_mesh_layer_1_vtx_3[100];
+extern Gfx tower_1_dl_Cylinder_mesh_layer_1_tri_3[];
+extern Gfx mat_tower_1_dl_f3dlite_material[];
+extern Gfx mat_tower_1_dl_castle_floor[];
+extern Gfx mat_tower_1_dl_bricks[];
+extern Gfx mat_revert_tower_1_dl_bricks[];
+extern Gfx mat_tower_1_dl_castle_generic[];
+extern Gfx mat_revert_tower_1_dl_castle_generic[];
+extern Gfx tower_1_dl_Cylinder_mesh_layer_1[];
+extern Gfx tower_1_dl_material_revert_render_settings[];
