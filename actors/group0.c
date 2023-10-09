@@ -32,3 +32,5 @@
 #endif
 
 #include "bullet_bill/model.inc.c"
+
+#include "spring/model.inc.c"

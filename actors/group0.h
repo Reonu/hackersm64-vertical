@@ -340,4 +340,6 @@ extern const Gfx bullet_bill_seg5_dl_0500E8A8[];
 
 #include "mario/geo_header.h"
 
+#include "spring/geo_header.h"
+
 #endif

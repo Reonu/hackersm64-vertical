@@ -18,3 +18,5 @@
 #include "mario/geo.inc.c"
 
 #include "bullet_bill/geo.inc.c"
+
+#include "spring/geo.inc.c"

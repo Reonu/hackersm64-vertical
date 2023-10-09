@@ -280,5 +280,6 @@ void cur_obj_spawn_star_at_y_offset(f32 targetX, f32 targetY, f32 targetZ, f32 o
 
 void init_obj_spline(void);
 void bhv_follow_spline(void);
+Gfx *geo_set_spring_color(s32 callContext, struct GraphNode *node, UNUSED void *context);
 
 #endif // OBJECT_HELPERS_H
