@@ -1,4 +1,16 @@
 // bullet_bill.inc.c
+#include "src/game/obj_behaviors_2.h"
+static struct ObjectHitbox sBulletBillHitbox = {
+    /* interactType:      */ INTERACT_BOUNCE_TOP,
+    /* downOffset:        */ 0,
+    /* damageOrCoinValue: */ 2,
+    /* health:            */ 4,
+    /* numLootCoins:      */ 0,
+    /* radius:            */ 300,
+    /* height:            */ 70,
+    /* hurtboxRadius:     */ 40,
+    /* hurtboxHeight:     */ 50,
+};
 
 void bhv_white_puff_smoke_init(void) {
     cur_obj_scale(random_float() * 2 + 2.0);
@@ -21,7 +33,7 @@ void bullet_bill_act_0(void) {
 
 void bullet_bill_act_1(void) {
     s16 sp1E = abs_angle_diff(o->oAngleToMario, o->oMoveAngleYaw);
-    if (sp1E < 0x2000 && 400.0f < o->oDistanceToMario && o->oDistanceToMario < 1500.0f) {
+    if (sp1E < 0x2000 && 400.0f < o->oDistanceToMario && o->oDistanceToMario < 3000.0f) {
         o->oAction = 2;
     }
 }
@@ -88,7 +100,9 @@ ObjActionFunc sBulletBillActions[] = {
 
 void bhv_bullet_bill_loop(void) {
     cur_obj_call_action_function(sBulletBillActions);
-    if (cur_obj_check_interacted()) {
-        o->oAction = 4;
+    if (!obj_check_attacks(&sBulletBillHitbox, o->oAction)) {
+        if (cur_obj_check_interacted()) {
+            o->oAction = 4;
+        }
     }
 }

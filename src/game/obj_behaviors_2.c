@@ -666,7 +666,7 @@ static s32 obj_update_standard_actions(f32 scale) {
     }
 }
 
-static s32 obj_check_attacks(struct ObjectHitbox *hitbox, s32 attackedMarioAction) {
+s32 obj_check_attacks(struct ObjectHitbox *hitbox, s32 attackedMarioAction) {
     s32 attackType;
 
     obj_set_hitbox(o, hitbox);
